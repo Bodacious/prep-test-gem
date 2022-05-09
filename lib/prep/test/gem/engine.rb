@@ -6,7 +6,7 @@ module Prep
 
         config.to_prepare do
           puts "Loaded from the engine"
-          puts "Module: #{FastThing.name}"
+          ApplicationController.include(FastThing)
         end
       end
     end
